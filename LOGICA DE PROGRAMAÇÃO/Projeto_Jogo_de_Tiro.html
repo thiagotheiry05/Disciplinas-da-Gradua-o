@@ -1,0 +1,149 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="https://github.com/processing/p5.js/releases/download/0.5.16/p5.js"></script> 
+  <script language="javascript" type="text/javascript" src="Jogo.js"></script>
+   
+
+  <style> body {padding: 0; margin: 0;} </style>
+</head>
+
+<body>
+
+	<script> 
+	
+	
+    var disparo = false; 
+    var xd, yd; 
+    var xj, yj; 
+    var posX, posY;
+    var imgJogador ; 
+    var vida = 1;
+    var nivel = 1;
+    var pontuaçao = 0;
+    var tela = 1;
+    var limitePontos = 50;
+
+
+
+    function setup() {
+    createCanvas(500, 500);
+    frameRate(30); 
+    xj = 50;
+    xd = xj; 
+    
+    yj = 50; 
+    yd = yj; 
+    
+    posX = 0;
+    posY = 450;
+    }
+  
+    
+  
+    function draw() {
+        if(tela==1){
+            textSize(50);
+            textFont ("Andalus")
+            text(" JOGO DE\nTIRO", 100, 140);
+            if (keyIsDown(ENTER)){
+                tela = 2;
+            }
+        } 
+        
+        if(tela==2){
+        
+    background(50);
+    ellipse(xj,60,30,30); 
+    if ( keyIsDown(RIGHT_ARROW) && xj<500) 
+    {
+        xj = xj + 7;
+    }
+    if ( keyIsDown(LEFT_ARROW) && xj>0) 
+    {
+        xj = xj - 7;
+    }
+        if (keyIsDown(CONTROL) && (! disparo) ){ 
+        disparo = true; 
+        xd = xj;
+        yd = yj;     
+    }
+    
+    if  (disparo) { 
+        yd = yd + 15;
+    if  (yd > width){  
+        disparo = false; 
+        } 
+    }
+        
+    background(50); 
+    
+    
+    ellipse(xj, yj, 50, 50);
+    
+    if (disparo) {
+        ellipse(xd,yd,12,12);
+    }
+
+    if (posX < 500){
+        posX = posX + 5;
+    }else{
+        posX = 0;
+    }
+    rect(posX, posY, 40, 40)
+    
+    textFont ("Andalus") 
+        textSize(25); 
+        fill(255, 255, 255);
+        text("Pontuação: " + pontuaçao, 10, 20);
+        fill(255, 255, 255);
+        text("Vidas: " + vida, 200, 20);
+        fill(255, 255, 255);
+        text("Nível: " + nivel, 400, 20);  
+    }
+     
+    if( xd<=posX+30 && xd>posX-20 && yd>=450 && yd<500){ 
+        pontuaçao=pontuaçao + 10 
+        yd = yj
+        disparo = false
+    }
+        
+    if(pontuaçao>limitePontos) {
+        nivel = nivel + 1 
+        limitePontos = limitePontos+50 
+        
+    }
+                
+        
+    if(yd>=height) {
+        vida = vida - 1
+    } 
+    
+    
+    
+    if(vida<=0){
+        tela = 3;
+    }
+
+    if(tela==3){
+            
+            background(0);
+            textSize(40);
+            fill(255, 255, 255);
+            text("voce nao atira bem!", 50, 160);
+            textSize(50);
+            fill(255, 255, 255);
+            text("GAME OVER", 50, 100)
+            
+            if (keyIsDown(SPACE)){
+                tela = 1;
+            }
+    
+        }	
+
+}
+	</script>
+
+</body>
+
+</html>
