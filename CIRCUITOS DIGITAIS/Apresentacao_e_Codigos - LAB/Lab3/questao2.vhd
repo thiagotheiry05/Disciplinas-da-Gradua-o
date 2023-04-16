@@ -1,0 +1,10 @@
+ENTITY Mux2x1 IS
+PORT(I0,I1,s0 : IN BIT; 
+d : OUT BIT);
+END Mux2x1;
+ARCHITECTURE behav OF Mux2x1 IS
+BEGIN
+WITH s0 SELECT
+d <= I0 WHEN '0',
+I1 WHEN '1';
+END behav;
