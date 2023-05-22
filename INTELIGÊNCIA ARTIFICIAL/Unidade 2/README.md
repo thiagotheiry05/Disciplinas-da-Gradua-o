@@ -27,8 +27,8 @@ Conclusão:
 
 O estudo sobre transferência de conhecimento no contexto de deep learning tem demonstrado ser uma abordagem eficaz para melhorar o desempenho de modelos em tarefas relacionadas. Essa técnica permite a utilização de conhecimentos prévios adquiridos em grandes conjuntos de dados e promove a generalização para tarefas específicas com menor necessidade de dados rotulados. Com a contínua evolução das técnicas de deep learning e a disponibilidade de modelos pré-treinados, espera-se que o uso da transferência de conhecimento se torne cada vez mais comum e impactante em várias áreas de aplicação.
 
-Um exemplo pratico pode ser visto na questão 3 da unidade 2. Foi usado o modelo VGG16 treinado no conjunto de dados da ImageNet e foram adcionadas camadas para ajustar o modelo aos requisitos da tarefa específica. 
+Um exemplo pratico pode ser visto na questão 3 da unidade 2 [GitHub Pages](https://github.com/thiagotheiry05/Disciplinas-da-Graduacao/blob/main/INTELIG%C3%8ANCIA%20ARTIFICIAL/Unidade%202/Quest%C3%A3o3_Lista2.ipynb). Foi usado o modelo VGG16 treinado no conjunto de dados da ImageNet e foram adcionadas camadas para ajustar o modelo aos requisitos da tarefa específica. 
 
-Link: https://github.com/thiagotheiry05/Disciplinas-da-Graduacao/blob/main/INTELIG%C3%8ANCIA%20ARTIFICIAL/Unidade%202/Quest%C3%A3o3_Lista2.ipynb
+
 
 
