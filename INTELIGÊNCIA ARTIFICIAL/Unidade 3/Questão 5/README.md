@@ -1,5 +1,9 @@
-# Disciplinas-da-Graduacao
+#  Lógica Fuzzy: Uma Abordagem Flexível para Modelagem e Tomada de Decisões
 
-Repositório que irá conter arquivos de provas/listas/atividades da gradução em engenharia da computação
+A lógica fuzzy é uma abordagem flexível para modelagem e tomada de decisões que permite lidar com a incerteza e a imprecisão presentes em muitos sistemas do mundo real. Ao contrário da lógica clássica binária, que opera com valores verdadeiros (1) e falsos (0), a lógica fuzzy permite a representação de graus de pertinência ou incerteza, utilizando conjuntos fuzzy e funções de pertinência. Os seus conjuntos são usados para descrever conceitos ou variáveis linguísticas que não possuem limites nítidos. Esses conjuntos fuzzy são definidos por funções de pertinência, que atribuem graus de pertinência a elementos do universo de discurso. As funções de pertinência podem ser representadas por diferentes formas, como triângulos, trapézios, curvas sigmoidais, entre outras.
 
+A grande vantagem da lógica fuzzy é a sua capacidade de lidar com informações vagas, ambíguas ou incompletas. Ela permite que as decisões sejam baseadas em regras linguísticas imprecisas e aproximadas, em vez de regras rígidas e binárias. Por exemplo, em vez de dizer "se a temperatura é 25 graus Celsius, a velocidade do ventilador deve ser 50%", podemos usar a lógica fuzzy para dizer "se a temperatura é moderada, a velocidade do ventilador deve ser média". Isso reflete melhor a natureza imprecisa e subjetiva das informações do mundo real. 
 
+Dessa forma foi feita nossa implementação na [Questão 5](https://github.com/thiagotheiry05/Disciplinas-da-Graduacao/blob/main/INTELIG%C3%8ANCIA%20ARTIFICIAL/Unidade%203/Quest%C3%A3o%205/Quest%C3%A3o5_Lista3.ipynb) em que dependendo da temperatura ambiente, o motor terá sua velocidade estabelecida. 
+
+A lógica fuzzy tem várias aplicações em diferentes áreas, como controle de processos, sistemas de suporte à decisão, robótica, diagnóstico médico, previsão do tempo, entre outras. Ela permite modelar e resolver problemas complexos com mais flexibilidade, considerando múltiplos critérios, imprecisões e incertezas.
