@@ -1,5 +1,5 @@
-# Disciplinas-da-Graduacao
+# Prova
 
-Repositório que irá conter arquivos de provas/listas/atividades da gradução em engenharia da computação
+### A unidade 1 foi composta por uma questão de 5 itens (letra a) até a letra e)), envolvendo controladores P, PD, PI e LGR. 
 
 
